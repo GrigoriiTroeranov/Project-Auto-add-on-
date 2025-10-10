@@ -1,0 +1,16 @@
+# configs/lstm_config.yaml
+
+  'batch_size': 128,           # Увеличил для стабильности
+  'sequence_length': 15,       # Увеличил для большего контекста
+  'embedding_dim': 64,         # Увеличил для лучшего представления слов
+  'hidden_dim': 128,           # Увеличил для большей емкости модели
+  'num_layers': 2,             # Добавил второй слой для сложных паттернов
+  'dropout': 0.2,              # Увеличил для лучшей регуляризации
+  'learning_rate': 0.001,
+  'weight_decay': 1e-5,        # Добавил L2 регуляризацию
+  'num_epochs': 3,             # Увеличил для реального обучения
+  'save_every': 1,
+  'early_stopping_patience': 5,
+  'show_examples_every': 1,
+  'clip_grad_norm': 1.0        # Добавил gradient clipping
+
